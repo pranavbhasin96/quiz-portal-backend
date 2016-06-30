@@ -23,6 +23,11 @@ var User = sequelize.define('user', {
     validate: {
       notEmpty: true
     }
+  },
+  lastQuestionAllowed: {
+    type: Sequelize.INTEGER,
+    allowNull: false,
+    defaultValue: 1
   }
 });
 
