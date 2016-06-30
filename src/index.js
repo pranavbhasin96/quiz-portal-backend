@@ -18,6 +18,7 @@ router.use(require('body-parser').urlencoded({ extended: true }));
 
 // Route "groups" (kinda controllers)
 router.use('/auth', require('./auth'))
+router.use('/question', require('./question'))
 
 // Error handlers
 router.use(errorHandlers.sequelizeValidationError)

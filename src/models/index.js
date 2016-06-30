@@ -1,4 +1,5 @@
 module.exports = {
   sequelize: require('./dbconfig'),
-  User: require('./user')
+  User: require('./user'),
+  Question: require('./question'),
 }
