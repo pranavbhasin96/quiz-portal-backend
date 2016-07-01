@@ -1,5 +1,7 @@
 # Generic Quiz portal backend
 
+[![Build Status](https://travis-ci.org/felicity-buzz-2k16/quiz-portal-backend.svg?branch=master)](https://travis-ci.org/felicity-buzz-2k16/quiz-portal-backend)
+
 This is the generic quiz portal's backend that is going to be used in Buzz. It would be used for events like Gordian Knot, Cache In, etc.
 
 Based on [meghprkh/express-auth-starter](https://github.com/meghprkh/express-auth-starter)
