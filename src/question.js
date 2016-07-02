@@ -25,7 +25,7 @@ router.post('/check/:qno(\\d+)?', middleware.isAuthenticated, (req, res) => {
   models.Question.findOne({where : { qno }})
     .then(question => {
       if (question) {
-        if (question.answer == answer) req.user.update({lastQuestionAllowed: lastQuestionAllowed + 1});
+        if (question.answer == answer && qno ==lastQuestionAllowed) req.user.update({lastQuestionAllowed: lastQuestionAllowed + 1});
         res.send({result: question.answer == answer});
       } else res.sendStatus(400);
     })
