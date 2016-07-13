@@ -29,7 +29,7 @@ var User = sequelize.define('user', {
     allowNull: false,
     defaultValue: 1
   },
-score: {
+  score: {
     type: Sequelize.INTEGER,
     allowNull: false,
     defaultValue: 0
