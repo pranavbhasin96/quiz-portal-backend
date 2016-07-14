@@ -28,6 +28,11 @@ var User = sequelize.define('user', {
     type: Sequelize.INTEGER,
     allowNull: false,
     defaultValue: 1
+  },
+  score: {
+    type: Sequelize.INTEGER,
+    allowNull: false,
+    defaultValue: 0
   }
 });
 
