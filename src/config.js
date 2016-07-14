@@ -1,3 +1,5 @@
 module.exports = {
-  secret: 'thisisthebiggestsecretyouhaveeverknowninyourwholelife'
+  secret: 'thisisthebiggestsecretyouhaveeverknowninyourwholelife',
+  scoreIncrementor: 10,
+  scoreDecrementor: 5
 }
