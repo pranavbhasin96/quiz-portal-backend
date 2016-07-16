@@ -47,7 +47,7 @@ router.post ('/register',  middleware.isNotAuthenticated, (req, res, next) => {
       });
     } else {
       bcrypt.hash(password, config.saltRounds, function(err, hash) {
-        // Store hash in your password DB. 
+        // Store hash in your password DB.
         if (err) return next (err);
         return models.User.create({
           email, hash, name
