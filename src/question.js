@@ -21,7 +21,7 @@ router.post('/check/:qno(\\d+)?', middleware.isAuthenticated, (req, res) => {
   var { qno } = req.params;
   const { answer } = req.body;
   const { lastQuestionAllowed } = req.user;
-  const {score} = req.user;
+  const { score } = req.user;
   if (!qno) qno = lastQuestionAllowed;
   if (qno > lastQuestionAllowed) {res.sendStatus(403); return false;}
   models.Question.findOne({where : { qno }})
