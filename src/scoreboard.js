@@ -7,6 +7,5 @@ module.exports = function (req, res, next){
   }).then(scores => {
     if (scores) res.send(scores);
     else res.sendStatus(400);
-    next();
-  })
+  }).catch(err => next(err));
 };
