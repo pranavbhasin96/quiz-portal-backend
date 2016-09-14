@@ -37,3 +37,6 @@ db.sqlite
 
 # public folder generated from frontend repo
 public
+
+#Exclude swap files
+*.swp
